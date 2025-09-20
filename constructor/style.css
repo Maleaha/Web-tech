@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+}
+
+.hero {
+  height: 90vh;
+  background: url('assets/home_bg.jpg') no-repeat center center/cover;
+  margin: 30px;
+  position: relative;
+}
+
+.header-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.nav a:hover {
+  color: #ddd;
+}
+
+.hero-content {
+  display:flex;
+  color:rgb(48, 36, 23);
+  flex-direction:row;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  background: white;
+  padding: 20px 50px;
+  margin:5px;
+  max-width: 700px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+#long-dash {
+  margin: 0 30px;   /* 30px gap on left and right */
+  font-size: 2rem; 
+  color: rgb(48, 36, 23);
+}
