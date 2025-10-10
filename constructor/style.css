@@ -105,7 +105,7 @@ body {
 }
 
 .about-section {
-  background: #fff;
+  background: #fafafa;
   padding: 80px 40px;
 }
 
@@ -254,3 +254,170 @@ body {
   line-height: 1.7;
   margin-bottom: 20px;
 }
+.project-section {
+  background: #f4f4f4;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto 40px;
+}
+
+.project-header h2 {
+  font-size: 2.5rem;
+  color: #5a5145;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.project-controls {
+  display: flex;
+  gap: 12px;
+}
+
+.arrow-btn {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #5a5145;
+  background: #fff;
+  color: #5a5145;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.arrow-btn:hover {
+  background: #5a5145;
+  color: #fff;
+}
+
+.read-btn {
+  padding: 10px 20px;
+  border: 1px solid #5a5145;
+  background: #fff;
+  color: #5a5145;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.read-btn:hover {
+  background: #5a5145;
+  color: #fff;
+}
+.project-image {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+  border: 8px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden; 
+}
+
+.project-image img {
+  width: 100%;
+  max-height: 400px;  
+  object-fit: cover; 
+  display: block;
+}
+
+.project-text {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.7;
+}
+.dark-project {
+  background: #e0e0e0; /* darker grey */
+}
+
+.steps-section {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+}
+
+.step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step-number img {
+  width: 80px;   
+  height: auto;
+}
+
+.step h3 {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  font-weight: 600;
+  color: #000;
+}
+
+.step p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.footer-section {
+  background: url("assets/footerbg.png") repeat center center;
+  padding: 80px 0 30px;
+}
+
+.footer-inner {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  color: #d0c7af;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+.footer-line {
+  flex: 1;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #d0c7af;
+}
+
+.footer-icons a {
+  margin: 0 12px;
+  display: inline-block;
+}
+
+.footer-icons img {
+  width: 55px;
+  height: 55px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #888;
+}
+
