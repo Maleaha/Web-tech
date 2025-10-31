@@ -65,4 +65,38 @@ function deleteStory() {
   }
 }
 
+function editStory() {
+  let box = $(this).closest(".story");
+  let id = box.attr("data-id");
+  let oldTitle = box.find("h5").text();
+  let oldContent = box.find("p").text();
 
+  box.html(`
+    <input id="newTitle" class="form-control mb-2" value="${oldTitle}">
+    <textarea id="newContent" class="form-control mb-2">${oldContent}</textarea>
+    <button class="btn btn-primary btn-sm save">Save</button>
+    <button class="btn btn-secondary btn-sm cancel">Cancel</button>
+  `);
+
+  box.on("click", ".save", function() {
+    let newTitle = $("#newTitle").val();
+    let newContent = $("#newContent").val();
+
+    if (!newTitle || !newContent) {
+      alert("Both fields required!");
+      return;
+    }
+
+    $.ajax({
+      url: "https://usmanlive.com/wp-json/api/stories/" + id,
+      method: "PUT",
+      data: { title: newTitle, content: newContent },
+      success: function() {
+        alert("Story updated!");
+        loadStories();
+      }
+    });
+  });
+
+  box.on("click", ".cancel", loadStories);
+}
